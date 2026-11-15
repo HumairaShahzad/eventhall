@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('eh-theme'); } catch (e) {}
+  if (!t) { t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<title>Request received | EventHall</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main" class="section">
+  <div class="container" style="max-width:780px">
+    <span class="eyebrow">Request received</span>
+    <h1 id="rr-title">Thank you. Your request is in.</h1>
+    <p class="lead">Your reference number is <strong id="ref">EH-------</strong>. Please quote it in any message to us.</p>
+
+    <div class="notice">
+      <p><strong>This is a request, not a confirmed booking.</strong> Your date is not reserved until our team has checked availability, sent your quote and you have accepted it.</p>
+    </div>
+
+    <h2 style="font-size:2rem;margin-top:2.5rem">What happens next</h2>
+    <ol class="steps" style="grid-template-columns:1fr;margin-top:1.4rem">
+      <li><span class="step-n">Step 1</span><p>A confirmation email with your reference is on its way.</p></li>
+      <li><span class="step-n">Step 2</span><p>Our team reviews availability for your date and room.</p></li>
+      <li><span class="step-n">Step 3</span><p id="rr-step">You will hear from us with a quote or a tour invitation.</p></li>
+    </ol>
+
+    <div class="actions">
+      <a class="btn btn-solid" href="index.html">Back to home</a>
+      <a class="btn btn-line" href="spaces.html">Browse spaces</a>
+      <a class="btn btn-line" href="faqs.html">Read the FAQs</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/images.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  var ref = p.get('ref') || '';
+  if (/^EH-[A-Z0-9]{6}$/.test(ref)) document.getElementById('ref').textContent = ref;
+  if (p.get('type') === 'tour') {
+    document.getElementById('rr-title').textContent = 'Thank you. Your tour request is in.';
+    document.getElementById('rr-step').textContent = 'We will confirm a tour time by email or phone.';
+  }
+})();
+</script>
+</body>
+</html>

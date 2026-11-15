@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('eh-theme'); } catch (e) {}
+  if (!t) { t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<title>Booking terms and policies | EventHall</title>
+<meta name="description" content="EventHall booking terms, deposits and payments, cancellations, changes, privacy and accessibility.">
+<link rel="canonical" href="https://www.eventhall.example/policies.html">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="policies">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Policies</span>
+      <h1>Booking terms and policies.</h1>
+      <p class="lead">Clear rules help everyone plan with confidence. If anything is unclear, <a href="contact.html">ask us</a> before you book.</p>
+      <div class="notice">
+        <p><strong>Draft text.</strong> Figures in square brackets must be completed, and all policies must be reviewed by the venue owner and a qualified adviser before publication.</p>
+      </div>
+      <nav class="toc" aria-label="Policy sections">
+        <a href="#booking">Booking</a>
+        <a href="#payments">Deposits and payments</a>
+        <a href="#cancellations">Cancellations</a>
+        <a href="#changes">Changes</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#accessibility">Accessibility</a>
+        <a href="#cookies">Cookies</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container" style="max-width:840px">
+
+      <div class="policy" id="booking">
+        <h2>Booking</h2>
+        <p>A booking is confirmed only when we send written confirmation, after you accept a quote and any required deposit has been received. Quotes show the date, times, room, guest count, inclusions, taxes and the terms that apply.</p>
+        <p>Setup and cleanup time is included in your reserved hours. Guest numbers must stay within the approved limit for your room and layout.</p>
+      </div>
+
+      <div class="policy" id="payments">
+        <h2>Deposits and payments</h2>
+        <p>Where a deposit is required, it is stated in your quote. Payments are taken through a secure provider. The remaining balance is due by [balance due date] unless your quote says otherwise.</p>
+        <p>Prices are shown in [currency] and include [applicable taxes and service charges].</p>
+      </div>
+
+      <div class="policy" id="cancellations">
+        <h2>Cancellations</h2>
+        <p>The refund you receive depends on how much notice you give. Cancellation requests are logged and confirmed by our team.</p>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr-only">Cancellation refund schedule</caption>
+            <thead><tr><th scope="col">Notice given</th><th scope="col">Refund of payments received</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">More than [X] days before the event</th><td>[X]%</td></tr>
+              <tr><th scope="row">Between [X] and [Y] days before</th><td>[X]%</td></tr>
+              <tr><th scope="row">Less than [Y] days before</th><td>No refund, unless agreed in writing</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:1rem">Refunds are processed after the cancellation is confirmed and usually reach your original payment method within [timeframe].</p>
+      </div>
+
+      <div class="policy" id="changes">
+        <h2>Changes</h2>
+        <p>You can request a change to your date, times, guest numbers or package. Your existing booking stays in place until the change has been checked for availability, priced and accepted. Any price difference is shown in a new quote.</p>
+      </div>
+
+      <div class="policy" id="privacy">
+        <h2>Privacy</h2>
+        <p>We use the details you give us to respond to your enquiry, prepare quotes and manage your booking. We do not sell your personal information. We send marketing messages only if you opt in, and you can withdraw consent at any time.</p>
+        <p>Your information is stored securely and kept only as long as needed for your booking and for legal obligations. To ask about your data, email <a href="mailto:hello@eventhall.example">hello@eventhall.example</a>.</p>
+      </div>
+
+      <div class="policy" id="accessibility">
+        <h2>Accessibility statement</h2>
+        <p>We aim to make this website usable by everyone, following WCAG 2.2 AA guidance. It supports keyboard navigation, screen readers, zoom and reduced-motion settings.</p>
+        <p>If you find a barrier or need information in another format, please <a href="contact.html">contact us</a>. We will respond and confirm what we can offer for your visit.</p>
+      </div>
+
+      <div class="policy" id="cookies">
+        <h2>Cookies</h2>
+        <p>This website stores only what it needs to run and to remember your theme choice. If analytics or marketing cookies are added later, they will be listed here and you will be asked for consent before they are set.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/images.js"></script>
+<script src="assets/js/layout.js"></script>
+</body>
+</html>

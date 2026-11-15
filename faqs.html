@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('eh-theme'); } catch (e) {}
+  if (!t) { t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<title>FAQs | EventHall</title>
+<meta name="description" content="Answers to common questions about booking, deposits, catering, alcohol, setup, noise and accessibility at EventHall.">
+<link rel="canonical" href="https://www.eventhall.example/faqs.html">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="faqs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">FAQs</span>
+      <h1>Questions, answered.</h1>
+      <p class="lead">Cannot find what you need? <a href="contact.html">Contact us</a> and we will reply.</p>
+      <nav class="toc" aria-label="FAQ sections">
+        <a href="#booking">Booking</a>
+        <a href="#catering">Catering</a>
+        <a href="#alcohol">Alcohol</a>
+        <a href="#setup">Setup and cleanup</a>
+        <a href="#noise">Noise</a>
+        <a href="#access">Accessibility</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container" style="max-width:840px">
+
+      <div class="faq-group" id="booking">
+        <h2>Booking</h2>
+        <details>
+          <summary>Is sending a request the same as booking?</summary>
+          <p>No. A request lets us check availability. Your date is reserved only after you accept a written quote and any required deposit is received.</p>
+        </details>
+        <details>
+          <summary>How long does it take to hear back?</summary>
+          <p>We aim to reply as soon as possible. You receive a reference number straight away when you send a request.</p>
+        </details>
+        <details>
+          <summary>Can you hold a date while I decide?</summary>
+          <p>Yes, when a quote is sent. The quote shows how long the date is held. Holds are not guaranteed after they expire.</p>
+        </details>
+        <details>
+          <summary>Do I need to pay a deposit?</summary>
+          <p>Deposit requirements are shown in your quote, along with the due date for any remaining balance.</p>
+        </details>
+        <details>
+          <summary>Can I change my date or guest numbers later?</summary>
+          <p>Yes, subject to availability and the terms of your booking. Changes are priced and confirmed before your original booking is altered. See the <a href="policies.html#changes">changes policy</a>.</p>
+        </details>
+      </div>
+
+      <div class="faq-group" id="catering">
+        <h2>Catering</h2>
+        <details>
+          <summary>Do you offer food and drink?</summary>
+          <p>Yes. We offer menus for every package, and tastings can be arranged on request. Catering is quoted separately.</p>
+        </details>
+        <details>
+          <summary>Can we bring our own caterer?</summary>
+          <p>This depends on the room and the event. Tell us your plans when you enquire so we can confirm what is permitted.</p>
+        </details>
+      </div>
+
+      <div class="faq-group" id="alcohol">
+        <h2>Alcohol</h2>
+        <details>
+          <summary>Can we serve alcohol?</summary>
+          <p>Alcohol can be served under our licensing arrangements. We confirm the options and any restrictions in your quote.</p>
+        </details>
+        <details>
+          <summary>Who needs a licence?</summary>
+          <p>Licensing rules depend on your location and the type of event. We will explain what applies to your booking.</p>
+        </details>
+      </div>
+
+      <div class="faq-group" id="setup">
+        <h2>Setup and cleanup</h2>
+        <details>
+          <summary>How much time do we get?</summary>
+          <p>Setup and cleanup time is included in your booked hours and shown on your quote and confirmation.</p>
+        </details>
+        <details>
+          <summary>Can we arrive early to decorate?</summary>
+          <p>Early access can usually be arranged for an additional fee. Ask when you make your enquiry.</p>
+        </details>
+      </div>
+
+      <div class="faq-group" id="noise">
+        <h2>Noise</h2>
+        <details>
+          <summary>Is there a music curfew?</summary>
+          <p>Yes. Amplified music must finish by the time agreed in your booking, to respect neighbours. Details are in the <a href="policies.html">booking terms</a>.</p>
+        </details>
+      </div>
+
+      <div class="faq-group" id="access">
+        <h2>Accessibility</h2>
+        <details>
+          <summary>Is the venue accessible?</summary>
+          <p>We want every guest to feel welcome. Tell us about access needs and we will confirm routes, facilities and seating for your date. See our <a href="policies.html#accessibility">accessibility statement</a>.</p>
+        </details>
+        <details>
+          <summary>Is there accessible parking?</summary>
+          <p>Please see the <a href="contact.html">contact page</a> for parking details, or ask us before your event.</p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/images.js"></script>
+<script src="assets/js/layout.js"></script>
+</body>
+</html>
