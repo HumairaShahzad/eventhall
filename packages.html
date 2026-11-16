@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('eh-theme'); } catch (e) {}
+  if (!t) { t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<title>Packages | EventHall</title>
+<meta name="description" content="Wedding, celebration and corporate packages at EventHall. Request a quote for an itemised price tailored to your date and guests.">
+<link rel="canonical" href="https://www.eventhall.example/packages.html">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="packages">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Packages</span>
+      <h1>Everything you need, clearly included.</h1>
+      <p class="lead">Each package lists what is included, what it requires and what is extra. Prices depend on date, guest count and add-ons, so you receive an itemised quote rather than a fixed price.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container grid">
+
+      <article class="card pkg" aria-labelledby="pkg-signature">
+        <span class="badge">Most requested</span>
+        <h2 id="pkg-signature">Signature Celebration</h2>
+        <p>A complete evening for weddings and gala dinners.</p>
+        <ul class="checklist">
+          <li>Room hire for your booked hours, including setup and cleanup</li>
+          <li>Tables, chairs and standard linens</li>
+          <li>A dedicated coordinator on the day</li>
+          <li>Standard lighting and sound points</li>
+        </ul>
+        <div class="meta">
+          <p><strong>Requires:</strong> at least 80 guests for seated dinners.</p>
+          <p><strong>Not included:</strong> catering, alcohol, decor, entertainment.</p>
+          <p>Pricing varies by date and guest count.</p>
+        </div>
+        <a class="btn btn-solid" href="inquiry.html">Request a quote</a>
+      </article>
+
+      <article class="card pkg" aria-labelledby="pkg-garden">
+        <span class="badge">Daytime</span>
+        <h2 id="pkg-garden">Garden Gathering</h2>
+        <p>An easygoing package for birthdays, showers and daytime parties.</p>
+        <ul class="checklist">
+          <li>Garden Room hire for your booked hours</li>
+          <li>Lounge seating and round tables</li>
+          <li>Access to the terrace</li>
+          <li>Coordinator contact for the day</li>
+        </ul>
+        <div class="meta">
+          <p><strong>Requires:</strong> a daytime booking unless agreed otherwise.</p>
+          <p><strong>Not included:</strong> catering, cake service, entertainment.</p>
+          <p>Pricing varies by date and guest count.</p>
+        </div>
+        <a class="btn btn-solid" href="inquiry.html">Request a quote</a>
+      </article>
+
+      <article class="card pkg" aria-labelledby="pkg-corporate">
+        <span class="badge">Business</span>
+        <h2 id="pkg-corporate">Corporate Essentials</h2>
+        <p>Practical set-up for meetings, launches and client receptions.</p>
+        <ul class="checklist">
+          <li>Room hire with a screen (Ivory Suite) or staging (Grand Hall)</li>
+          <li>Reception table and water service</li>
+          <li>An itemised, invoice-ready quote</li>
+          <li>Setup and breakdown coordination</li>
+        </ul>
+        <div class="meta">
+          <p><strong>Requires:</strong> a named contact and a confirmed running order.</p>
+          <p><strong>Not included:</strong> catering, technical crew, printing.</p>
+          <p>Pricing varies by date and guest count.</p>
+        </div>
+        <a class="btn btn-solid" href="inquiry.html">Request a quote</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <span class="eyebrow">Add-ons</span>
+      <h2>Extras you can add to any package.</h2>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Available add-ons and how they are priced</caption>
+          <thead><tr><th scope="col">Add-on</th><th scope="col">Pricing</th><th scope="col">Notes</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Catering and menus</th><td>Quoted per guest</td><td>Tasting available on request.</td></tr>
+            <tr><th scope="row">Decor and florals</th><td>Quoted per request</td><td>Styling options shown during your tour.</td></tr>
+            <tr><th scope="row">Equipment hire</th><td>Quoted per item</td><td>Includes delivery and collection.</td></tr>
+            <tr><th scope="row">Extended hours</th><td>Quoted per hour</td><td>Subject to availability on the day.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note mt">Taxes and service charges are shown separately on your quote.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="band">
+        <div>
+          <h2>Not sure which package suits you?</h2>
+          <p>Tell us about your event and we will recommend the right fit.</p>
+        </div>
+        <div class="actions" style="margin-top:0">
+          <a class="btn btn-solid" href="inquiry.html">Check your date</a>
+          <a class="btn btn-line" href="contact.html">Book a tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/images.js"></script>
+<script src="assets/js/layout.js"></script>
+</body>
+</html>

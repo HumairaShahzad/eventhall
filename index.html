@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('eh-theme'); } catch (e) {}
+  if (!t) { t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<title>EventHall | Beautiful occasions. Effortless bookings.</title>
+<meta name="description" content="Elegant event spaces for weddings, birthdays and corporate events. Check your date and request a tour.">
+<link rel="canonical" href="https://www.eventhall.example/">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+
+  <section class="hero" data-img="hero">
+    <div class="container hero-inner">
+      <span class="eyebrow">Event venue</span>
+      <h1>Beautiful occasions, effortlessly booked.</h1>
+      <p class="lead">Elegant rooms for weddings, birthdays and corporate events. Tell us your date and our team will take care of the rest.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="inquiry.html">Check your date</a>
+        <a class="btn btn-line" href="contact.html">Book a tour</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rooms-h">
+    <div class="container">
+      <span class="eyebrow">Our spaces</span>
+      <h2 id="rooms-h">Three rooms, one standard of care.</h2>
+      <p class="lead">Seated dinners, standing receptions and everything in between.</p>
+      <div class="grid mt">
+        <article class="card">
+          <div class="media" data-img="grand" role="img" aria-label="The Grand Hall set for a seated dinner"></div>
+          <h3>The Grand Hall</h3>
+          <p>Our largest room, with high ceilings and flexible staging for weddings and gala evenings.</p>
+          <p class="note">Up to 250 seated, 350 standing</p>
+          <a class="link" href="spaces.html#grand">View the room</a>
+        </article>
+        <article class="card">
+          <div class="media" data-img="garden" role="img" aria-label="The Garden Room with natural light"></div>
+          <h3>The Garden Room</h3>
+          <p>Light and relaxed, with access to the terrace. Ideal for birthdays and daytime celebrations.</p>
+          <p class="note">Up to 120 seated, 160 standing</p>
+          <a class="link" href="spaces.html#garden">View the room</a>
+        </article>
+        <article class="card">
+          <div class="media" data-img="ivory" role="img" aria-label="The Ivory Suite set for a private reception"></div>
+          <h3>The Ivory Suite</h3>
+          <p>A private, refined room for receptions, boardroom dinners and milestone gatherings.</p>
+          <p class="note">Up to 50 seated, 80 standing</p>
+          <a class="link" href="spaces.html#ivory">View the room</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="how-h">
+    <div class="container">
+      <span class="eyebrow">How it works</span>
+      <h2 id="how-h">From first question to confirmed date.</h2>
+      <ol class="steps mt">
+        <li><span class="step-n">Step 1</span><h3>Check your date</h3><p>Choose your event type, date, times and guest count.</p></li>
+        <li><span class="step-n">Step 2</span><h3>Send your request</h3><p>We check the room and schedule for your date.</p></li>
+        <li><span class="step-n">Step 3</span><h3>Receive your quote</h3><p>You get an itemised quote, or an invitation to tour first.</p></li>
+        <li><span class="step-n">Step 4</span><h3>Confirm</h3><p>Accept the quote and terms. Your date is reserved once confirmed.</p></li>
+      </ol>
+      <p class="note mt">A request is not a booking. A date is only reserved after you accept a quote and any required deposit is paid.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="gallery-h">
+    <div class="container">
+      <span class="eyebrow">Gallery</span>
+      <h2 id="gallery-h">Moments we have hosted.</h2>
+      <div class="gallery-strip mt">
+        <a href="gallery.html" aria-label="Open the gallery: weddings">
+          <div class="media" data-img="gallery-1" role="img" aria-label="Wedding reception with candlelit tables"></div>
+        </a>
+        <a href="gallery.html" aria-label="Open the gallery: birthdays">
+          <div class="media" data-img="gallery-2" role="img" aria-label="Birthday celebration table styling"></div>
+        </a>
+        <a href="gallery.html" aria-label="Open the gallery: corporate events">
+          <div class="media" data-img="gallery-3" role="img" aria-label="Corporate event stage"></div>
+        </a>
+      </div>
+      <div class="actions"><a class="btn btn-line" href="gallery.html">View the full gallery</a></div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="band">
+        <div>
+          <h2>Ready when you are.</h2>
+          <p>Check availability for your date, or come and see the rooms in person.</p>
+        </div>
+        <div class="actions" style="margin-top:0">
+          <a class="btn btn-solid" href="inquiry.html">Check your date</a>
+          <a class="btn btn-line" href="contact.html">Book a tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/images.js"></script>
+<script src="assets/js/layout.js"></script>
+</body>
+</html>

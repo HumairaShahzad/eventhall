@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('eh-theme'); } catch (e) {}
+  if (!t) { t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<title>Spaces | EventHall</title>
+<meta name="description" content="The Grand Hall, The Garden Room and The Ivory Suite, with seated and standing capacities and supported layouts.">
+<link rel="canonical" href="https://www.eventhall.example/spaces.html">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="spaces">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Spaces</span>
+      <h1>Rooms designed for every kind of celebration.</h1>
+      <p class="lead">Compare capacities and layouts below. Final numbers depend on your set-up, furniture and safety requirements, and are confirmed in your quote.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container">
+
+      <article class="room" id="grand" aria-labelledby="grand-h">
+        <div class="media" data-img="grand" role="img" aria-label="The Grand Hall set for a seated wedding dinner"></div>
+        <div>
+          <span class="eyebrow">Largest room</span>
+          <h2 id="grand-h">The Grand Hall</h2>
+          <p>High ceilings, a dance floor and a dedicated entrance make this our signature room for weddings and gala evenings.</p>
+          <dl class="specs">
+            <dt>Seated</dt><dd>Up to 250 guests</dd>
+            <dt>Standing</dt><dd>Up to 350 guests</dd>
+            <dt>Layouts</dt><dd>Banquet, cabaret, theatre, reception</dd>
+            <dt>Includes</dt><dd>Stage, lighting rig, sound points, bridal suite</dd>
+          </dl>
+          <div class="actions"><a class="btn btn-solid btn-sm" href="inquiry.html">Check your date</a></div>
+        </div>
+      </article>
+
+      <article class="room flip" id="garden" aria-labelledby="garden-h">
+        <div class="media" data-img="garden" role="img" aria-label="The Garden Room with tall windows and natural light"></div>
+        <div>
+          <span class="eyebrow">Light and airy</span>
+          <h2 id="garden-h">The Garden Room</h2>
+          <p>Floor-to-ceiling windows open onto the terrace, suited to birthdays, showers and daytime celebrations.</p>
+          <dl class="specs">
+            <dt>Seated</dt><dd>Up to 120 guests</dd>
+            <dt>Standing</dt><dd>Up to 160 guests</dd>
+            <dt>Layouts</dt><dd>Round tables, long tables, lounge</dd>
+            <dt>Includes</dt><dd>Terrace access, natural light</dd>
+          </dl>
+          <div class="actions"><a class="btn btn-solid btn-sm" href="inquiry.html">Check your date</a></div>
+        </div>
+      </article>
+
+      <article class="room" id="ivory" aria-labelledby="ivory-h">
+        <div class="media" data-img="ivory" role="img" aria-label="The Ivory Suite styled for an intimate reception"></div>
+        <div>
+          <span class="eyebrow">Intimate</span>
+          <h2 id="ivory-h">The Ivory Suite</h2>
+          <p>A private, refined room for receptions, boardroom dinners and milestone gatherings.</p>
+          <dl class="specs">
+            <dt>Seated</dt><dd>Up to 50 guests</dd>
+            <dt>Standing</dt><dd>Up to 80 guests</dd>
+            <dt>Layouts</dt><dd>Boardroom, round tables, reception</dd>
+            <dt>Includes</dt><dd>Private entrance, screen, pantry access</dd>
+          </dl>
+          <div class="actions"><a class="btn btn-solid btn-sm" href="inquiry.html">Check your date</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="band">
+        <div>
+          <h2>Not sure which room fits?</h2>
+          <p>Tell us your guest count and style, and we will recommend the right space and layout.</p>
+        </div>
+        <div class="actions" style="margin-top:0">
+          <a class="btn btn-solid" href="contact.html">Book a tour</a>
+          <a class="btn btn-line" href="inquiry.html">Check your date</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/images.js"></script>
+<script src="assets/js/layout.js"></script>
+</body>
+</html>

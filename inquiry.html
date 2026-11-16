@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('eh-theme'); } catch (e) {}
+  if (!t) { t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<title>Check your date | EventHall</title>
+<meta name="description" content="Check your date at EventHall. Share your event details and our team will confirm availability and send a quote.">
+<link rel="canonical" href="https://www.eventhall.example/inquiry.html">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="inquiry">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Check your date</span>
+      <h1>Tell us about your celebration.</h1>
+      <p class="lead">Share a few details and our team will check availability and send your quote. Sending a request does not reserve your date.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container form-layout">
+
+      <form class="form" id="inquiry-form" data-form="inquiry" novalidate>
+        <p class="form-summary" role="alert"></p>
+
+        <fieldset>
+          <legend>About your event</legend>
+          <div class="grid-fields">
+            <div class="field">
+              <label for="event">Event type</label>
+              <select id="event" name="event" required>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Birthday or milestone</option>
+                <option value="corporate">Corporate event</option>
+                <option value="private">Private party</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="start">Start time</label>
+              <input id="start" name="start" type="time" required>
+            </div>
+            <div class="field">
+              <label for="end">End time</label>
+              <input id="end" name="end" type="time" required>
+              <p class="hint">Setup and cleanup time is included in your booked hours.</p>
+            </div>
+            <div class="field">
+              <label for="guests">Number of guests</label>
+              <input id="guests" name="guests" type="number" inputmode="numeric" min="1" max="500" required>
+            </div>
+            <div class="field">
+              <label for="room">Room preference</label>
+              <select id="room" name="room" required>
+                <option value="" disabled selected>Choose a room</option>
+                <option value="grand" data-max="350">The Grand Hall (up to 350 standing)</option>
+                <option value="garden" data-max="160">The Garden Room (up to 160 standing)</option>
+                <option value="ivory" data-max="80">The Ivory Suite (up to 80 standing)</option>
+                <option value="any" data-max="350">No preference, suggest the best fit</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="grid-fields">
+            <div class="field">
+              <label for="first">First name</label>
+              <input id="first" name="first" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="last">Last name</label>
+              <input id="last" name="last" autocomplete="family-name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Anything else?</legend>
+          <div class="field">
+            <label for="description">Tell us more <span class="note">(optional)</span></label>
+            <textarea id="description" name="description" maxlength="1000"></textarea>
+            <p class="hint">For example: style, catering needs, accessibility requirements, or alternative dates.</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Consent</legend>
+          <div class="field">
+            <label class="check" for="consent">
+              <input id="consent" name="consent" type="checkbox" required data-msg="Please accept the booking terms to send your request.">
+              <span>I have read the <a href="policies.html">booking terms</a> and agree to be contacted about this request.</span>
+            </label>
+          </div>
+          <div class="field" style="margin-top:1rem">
+            <label class="check" for="marketing">
+              <input id="marketing" name="marketing" type="checkbox">
+              <span>Send me occasional news and offers (optional).</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div>
+          <button class="btn btn-solid" type="submit">Send my request</button>
+          <p class="hint" style="margin-top:.8rem">Our team will get back to you shortly. Your request is not a confirmed booking.</p>
+        </div>
+      </form>
+
+      <aside class="aside" aria-labelledby="next-h">
+        <h2 id="next-h" style="font-size:1.6rem">What happens next</h2>
+        <ol>
+          <li><strong>We receive your request.</strong> You get a reference number straight away.</li>
+          <li><strong>We check the schedule.</strong> If your date is taken, we suggest alternatives.</li>
+          <li><strong>You receive a quote.</strong> Or we invite you to tour the rooms first.</li>
+          <li><strong>You confirm.</strong> Your date is reserved once you accept the quote and terms.</li>
+        </ol>
+        <div class="notice">
+          <p><strong>This is a request, not a booking.</strong> Your date is not reserved until it is confirmed in writing.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/images.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>
